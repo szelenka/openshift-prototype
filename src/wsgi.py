@@ -15,7 +15,6 @@ def hello_world():
 
 @app.route('/echo_request')
 def echo_request():
-    username = request.headers.get('Auth-User')
     return jsonify(dict(request.headers))
 
 
